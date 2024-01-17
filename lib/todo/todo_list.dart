@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:homework4/services/notification_service.dart';
 import 'package:homework4/todo/todo.dart';
 
 import '../database/todo_db.dart';
@@ -17,9 +18,6 @@ class _TodoListState extends State<TodoList>{
   final todoDB = TodoDB();
 
   void loadTodos() async {
-    // final prefs = await SharedPreferences.getInstance();
-    // List<String> stringList = prefs.getStringList('todos') ?? [];
-
     List<Todo> todos = await todoDB.loadAllTodos();
     setState(() {
       _todos = todos;
@@ -70,7 +68,8 @@ class _TodoListState extends State<TodoList>{
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: ()  {
-          _addTodoItem(context);
+          NotificationService().showNotification(title: "sample title", body: 'It works!');
+          // _addTodoItem(context);
         },
         tooltip: 'Add Item',
         child: const Icon(Icons.add),

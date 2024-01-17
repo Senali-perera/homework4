@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:homework4/services/notification_service.dart';
 import 'package:homework4/todo/todo_list.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Permission.notification.isDenied.then((value) {
+    if (value) {
+      Permission.notification.request();
+    }
+  });
+  NotificationService().initNotification();
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
