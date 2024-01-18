@@ -134,6 +134,38 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_background_service:
+    dependency: "direct main"
+    description:
+      name: flutter_background_service
+      sha256: d3c6cb7916b70b73da30740237e1e3cf41f81eba32c9cb6bca3a33d49ad4a144
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.0"
+  flutter_background_service_android:
+    dependency: "direct main"
+    description:
+      name: flutter_background_service_android
+      sha256: "98a5352399ed77d65fa8301b0f14b5c3b5b52ab7fe104e7c83fdf1b6f5861826"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.0"
+  flutter_background_service_ios:
+    dependency: transitive
+    description:
+      name: flutter_background_service_ios
+      sha256: fc793ba580b43b50aa53f3a0a146faf8da5eb875c3fa58ee2dc8af35a3c8e910
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.0"
+  flutter_background_service_platform_interface:
+    dependency: "direct main"
+    description:
+      name: flutter_background_service_platform_interface
+      sha256: "3521274bc6b8b045a82c7fdcd4c3a0aea18e612f223c24c3a08d305db900a5bb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -448,6 +480,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
+  sensors:
+    dependency: transitive
+    description:
+      name: sensors
+      sha256: "69c10fe94a63dd7c6f5e6557366e5329a713bf6c45d885d95a56642dd8722e35"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
+  shake:
+    dependency: "direct main"
+    description:
+      name: shake
+      sha256: "48d8265530de7cc1bc7b279702f59d3c10505778b2fbe50314ebf2928eb4e52a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   shared_preferences:
     dependency: "direct main"
     description:
@@ -613,6 +661,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.9"
+  workmanager:
+    dependency: "direct main"
+    description:
+      name: workmanager
+      sha256: e0be7e35d644643f164ee45d2ce14414f0e0fdde19456aa66065f35a0b1d2ea1
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.1"
   xdg_directories:
     dependency: transitive
     description:
