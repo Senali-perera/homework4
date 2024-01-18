@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:homework4/services/notification_service.dart';
 import 'package:homework4/todo/todo.dart';
 
 import '../database/todo_db.dart';
@@ -68,8 +67,7 @@ class _TodoListState extends State<TodoList>{
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: ()  {
-          NotificationService().showNotification(title: "sample title", body: 'It works!');
-          // _addTodoItem(context);
+          _addTodoItem(context);
         },
         tooltip: 'Add Item',
         child: const Icon(Icons.add),
